@@ -21,11 +21,7 @@ The Student management System comprises a frontend built with React.js and a bac
 - MySQL
 - Maven
 
-## Features
-- **User Authentication:** Secure sign up, login, and logout functionalities.
-- **Student Search:** Search for students in the database.
-- **Student Addition:** Add new Students to the database.
-- **Student Deletion:** Delete Student from the database.
+
   
 
 ## Setup Instructions
