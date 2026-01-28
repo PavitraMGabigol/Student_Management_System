@@ -3,14 +3,6 @@
 
 Welcome to the Student management System! This project consists of both frontend and backend components to facilitate Student Management , Add Students , Edit information such functions.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Setup Instructions](#setup-instructions)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-
 ## Introduction
 The Student management System comprises a frontend built with React.js and a backend developed using Java with Spring Boot. It provides users with an intuitive interface for searching Students, Adding Students, and managing their information. The backend offers RESTful APIs for adding , removing students and more.
 
@@ -55,11 +47,5 @@ The Student management System comprises a frontend built with React.js and a bac
 ## API Documentation
 Detailed API documentation can be found in the `apidoc.txt` file in the project repository. 
 
-## Contributing
-Contributions are welcome! To contribute to the project, follow these steps:
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature/YourFeature`.
-3. Commit your changes: `git commit -m 'Add YourFeature'`.
-4. Push to the branch: `git push origin feature/YourFeature`.
-5. Open a pull request adhering to the project's coding conventions and including relevant tests if applicable.
+
 
