@@ -1,102 +1,99 @@
-.home-container {
-    padding: 20px;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", sans-serif;
 }
 
-.welcome-banner {
-    background: linear-gradient(45deg, #5f2c82, #49a09d);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-    animation: fadeInDown 1s ease;
+html, body {
+	width: 100%;
+	height: 100%;
 }
 
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* PAGE BACKGROUND */
+.home-bg {
+	min-height: 100vh;
+	width: 100%;
+	background:
+		linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+		url("./component/bg.jpg") center/cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 20px;
+	color: white;
 }
 
-.subtitle {
-    color: #fff;
-    margin-top: 10px;
+/* GLASS HERO CARD */
+.glass-card {
+	max-width: 900px;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-radius: 18px;
+	padding: 40px;
+	text-align: center;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+	margin-bottom: 50px;
 }
 
-.features-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease;
+.glass-card h1 {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
 }
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.glass-card p {
+	font-size: 1.1rem;
+	line-height: 1.6;
 }
 
-.features-section h3 {
-    color: #333;
+.glass-card button {
+	margin-top: 25px;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 25px;
+	font-size: 1rem;
+	cursor: pointer;
+	background: #00c6ff;
+	color: #000;
+	transition: all 0.3s ease;
 }
 
-.features-section ul {
-    list-style-type: none;
-    padding: 0;
+.glass-card button:hover {
+	transform: scale(1.05);
+	background: #fff;
 }
 
-.features-section li {
-    margin-bottom: 10px;
-    color: #666;
-    animation: fadeIn 1s ease;
-}
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+/* FEATURES GRID */
+.features-wrapper {
+	width: 100%;
+	max-width: 1100px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 25px;
 }
 
-.footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* FEATURE CARD */
+.feature {
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 16px;
+	padding: 25px;
+	text-align: center;
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease;
+	cursor: pointer;
 }
 
-.footer-info h4 {
-    margin-bottom: 10px;
+.feature:hover {
+	transform: translateY(-8px);
 }
 
-.footer-info p {
-    font-size: 14px;
+.feature h3 {
+	margin-bottom: 10px;
+	color: #0f2027;
 }
 
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.feature p {
+	color: #555;
+	font-size: 0.95rem;
 }
